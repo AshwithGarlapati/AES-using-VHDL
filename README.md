@@ -28,3 +28,8 @@ For each round in AES requires different key for the addition to the input text.
 The given input key is divided into blocks and the 4th word(1 word = 32 bits) of the key is passed into G-Function and the output is XOR-ed with 1st word of input key to generate the 1st word of required key, this 1st word of the required key is XOR-ed with the 2nd word of the input key that gives the 2nd word of the required key, this 2nd word of the required key is XOR-ed with the 2nd word of the input key that gives the 3rd word of the required key and for the 4th word is done similarly.
 And the keys of all the rounds are produced using the previous round key.
 ![image](https://user-images.githubusercontent.com/91657743/135605840-42516e95-834f-4c08-a257-e58083b40716.png)
+
+
+For better clarity refer the presentation 
+https://github.com/AshwithGarlapati/AES-using-VHDL/blob/main/AES%20encryption.pptx
+
