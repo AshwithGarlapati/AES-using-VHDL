@@ -6,18 +6,22 @@ Along with the input plain text it also has a input key of 128 bits. Each round 
 
 # Substitution of bytes
 Substitution of bytes is the replacing a each byte of data with a pre-defined byte. This substitution is done using Rijendael S-box()encryption.
+![image](https://user-images.githubusercontent.com/91657743/135605930-a8c0f088-e20d-4289-a503-2d1177146505.png)
 
 # Shift Rows
 It is one of the easiest step in the round. 
 In the  shift-row operation there is no change in 1st row, 2nd row is left-shifted by 1 byte, 3rd row is left-shifted by 2 bytes and the last row is shifted by 3 bytes.
+![image](https://user-images.githubusercontent.com/91657743/135605954-f6ee6b33-4a10-413c-ab33-1499d5a08f9f.png)
 
 # Mix Columns
 For the process of mix-column is the multiplication of the input matrix with a pre-defined matrix.
 The step multiplication of matrices involves addition and multiplication of the numbers. These addition and multiplication are done using Galio’s-field addition and multiplication.
+![image](https://user-images.githubusercontent.com/91657743/135605970-2683fded-d94f-4c55-9c28-aff6f39c919c.png)
 
 # Addition of Round-key
 This is the last step in the Round. It takes two inputs input text and the key respective to the round. 
 The addition of round key is the XOR operation of round key and the input data. 
+![image](https://user-images.githubusercontent.com/91657743/135606366-00b6fe4f-9521-42fe-8a41-3e5829e774aa.png)
 
 # Key Expansion
 For each round in AES requires different key for the addition to the input text. So, the given input key is used to generate key for its next round.
